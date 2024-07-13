@@ -4,33 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taniti</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1 id="main-title">Taniti</h1>
-      <h3 class="subheader">Subheader</h3>
-    </header>
-    <nav>
+      <nav>
         <ul>
-            <li class="nav-item"><a href="./pages/lodging.html">Lodging</a></li>
-            <li class="nav-item"><a href="./pages/transportation.html">Transportation</a></li>
-            <li class="nav-item"><a href="./pages/cuisine.html">Cuisine</a></li>
-            <li class="nav-item"><a href="./pages/attractions.html">Attractions</a></li>
+          <li class="nav-item"><a href="./lodging.html">Lodging</a></li>
+          <li class="nav-item">
+            <a href="./transportation.html">Transportation</a>
+          </li>
+          <li class="nav-item"><a href="./cuisine.html">Cuisine</a></li>
+          <li class="nav-item">
+            <a href="../index.html">Home</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
+    </header>
     <section>
-        <h2 class="page-header">Welcome to Taniti</h2>
-        <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.</p>
+      <h2 class="page-header">Sightseeing</h2>
+      <p>
+        <img src="../new-zealand-3018634_1280.jpg" alt="Volcano" style="width: 45rem; margin: 0 25%">
+        Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano.
+      </p>
+      <h2 class="page-header">Entertainment</h2>
+      <p>
+        Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. <img src="../artist-3480274_1280.jpg" alt="Party" style="float: left; margin-bottom: 10rem">However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay.
+      </p>
     </section>
     <footer>
-        <h5>Copright 2024 Government of Taniti</h5>
+      <h5>Copright 2024 Government of Taniti</h5>
     </footer>
   </body>
   <!--Script tag added to prevent and submit buttons from working-->
   <script>
     const submitButton = document.getElementsByTagName("button");
     submitButton.addEventListener("click", (e) => {
-        e.preventDefault();
-    })
+      e.preventDefault();
+    });
   </script>
 </html>

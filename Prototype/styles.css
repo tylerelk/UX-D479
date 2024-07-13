@@ -9,9 +9,8 @@
   box-sizing: border-box;
 }
 
-/*TEMP OUTLINE*/
-* {
-  border: 1px solid red;
+nav {
+  height: max-content;
 }
 
 ul {
@@ -33,11 +32,24 @@ a {
 li {
   background-color: var(--highlight1);
   margin: 0.25rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  box-shadow: 0px 0px 20px 1px var(--highlight1);
 }
 
 body {
   width: 100vw;
   margin: 0;
+  background-color: var(--lightFont);
 }
 
 header {
@@ -48,6 +60,104 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
+}
+
+#main-title {
+  font-size: 60px;
+  margin: 0;
+  padding-right: 2rem;
+  text-shadow: 5px 5px 10px var(--highlight1);
+}
+
+section {
+  margin: 1rem auto;
+  padding-bottom: 5rem;
+  width: 80%;
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid var(--highlight1);
+  border-top: 2px solid var(--highlight1);
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 30rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 15px lightgrey;
+  margin: 1rem;
+}
+
+.emphasize-start {
+    font-family: "Playwrite CU", cursive;
+    font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--highlight2);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+.img-container {
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid var(--darkFont);
+    border-radius: 20px;
+    display: flex;
+}
+
+.img-container > img {
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+form {
+    width: 60%;
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form > h3 {
+    border-bottom: 1px solid var(--highlight2)
+}
+
+form > label, form > input {
+    margin: 0.3rem auto;
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 1rem;
+    font-size: 20px;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 1px var(--highlight1);
+    background-color: var(--highlight2);
+}
+
+input[type="text"], input[type="email"] {
+    margin: 0.5rem auto;
+    border-radius: 30px;
 }
 
 h1,
@@ -60,6 +170,9 @@ h4,
 h5,
 p,
 a,
-li {
+li,
+label,
+input {
   font-family: "Montserrat", sans-serif;
+  line-height: 30px;
 }
