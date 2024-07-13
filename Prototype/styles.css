@@ -1,0 +1,65 @@
+:root {
+  --highlight1: #ff7db0;
+  --highlight2: #84ebe1;
+  --lightFont: #e4eaf1;
+  --darkFont: #201d1d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*TEMP OUTLINE*/
+* {
+  border: 1px solid red;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+li,
+a {
+  text-decoration: none;
+  color: var(--lightFont);
+}
+
+li {
+  background-color: var(--highlight1);
+  margin: 0.25rem;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: var(--highlight2);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+h1,
+h2 {
+  font-family: "Playwrite CU", cursive;
+}
+
+h3,
+h4,
+h5,
+p,
+a,
+li {
+  font-family: "Montserrat", sans-serif;
+}
